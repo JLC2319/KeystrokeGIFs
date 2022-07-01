@@ -2,12 +2,9 @@ from cgitb import text
 from distutils.log import error
 import cv2
 import numpy
+from moviepy.editor import *
 
-path = 'logitechK120.png'
 
-img = cv2.imread(path, cv2.IMREAD_COLOR)
-
-window_name = path
 
 keyRectangles = [
     #top row
@@ -28,9 +25,9 @@ keyRectangles = [
     [{'x':900,'y':220,'w':55,'h':55}, 'f11'],
     [{'x':960,'y':220,'w':55,'h':55}, 'f12'],
 
-    [{'x':1042,'y':220,'w':55,'h':55},'#print screen'],
-    [{'x':1102,'y':220,'w':55,'h':55},'#scroll lock'],
-    [{'x':1162,'y':220,'w':55,'h':55},'#pause break'],
+    [{'x':1042,'y':220,'w':55,'h':55},'print screen'],
+    [{'x':1102,'y':220,'w':55,'h':55},'scroll lock'],
+    [{'x':1162,'y':220,'w':55,'h':55},'pause break'],
     #second row
     [{'x':125,'y':298,'w':55,'h':55}, '`'],
     [{'x':185,'y':298,'w':55,'h':55}, '1'],
@@ -127,7 +124,14 @@ def returnkeyrect(keyStr, rects = keyRectangles):
         print(f'-- {keyStr} -- Key not found. see reference: ', [r[1] for r in rects])
         return {'x':0,'y':0,'w':0,'h':0}
 
-def highlightKeys(img, keys, color = (100, 255, 255), lineThickness = 2):
+#[{'x':165,'y':220,'w':55,'h':55}, 'esc'],
+
+exampleKeystroke = [
+    ['alt'],
+    ['alt', 'tab']
+    ]
+
+def highlightKeys(img, keys, color = (255, 0, 0), lineThickness = 2):
     retImg = img.copy()
     for rect in [returnkeyrect(key) for key in keys]:
         startPoint = (rect['x'],rect['y'])
@@ -135,30 +139,28 @@ def highlightKeys(img, keys, color = (100, 255, 255), lineThickness = 2):
         retImg = cv2.rectangle(retImg, startPoint, endPoint, color, lineThickness)
     return retImg
     
-#[{'x':165,'y':220,'w':55,'h':55}, 'esc'],
 
-exampleKeystroke = [
-    ['space'],
-    ['window', 'tab']
-    ]
+def makeKeyStrokeImgs(keyCombos:list[list[str]], img):
+    beforeAfter = img.copy()
+    imgs = [beforeAfter]
+
+    for keyStroke in keyCombos:
+        keyStrokeImg = highlightKeys(img.copy(), keyStroke)
+        imgs.append(keyStrokeImg)
+    imgs.append(beforeAfter)
+    imgs = [img[180:620, 100:1500] for img in imgs]
+    return imgs
+
+def makeKeystrokeGif(keystroke, img, filename:str, fps=.75):
+    clip = ImageSequenceClip(makeKeyStrokeImgs(keystroke,img), fps=.75)
+    if not filename.endswith('.gif'):
+        filename = filename+'.gif'
+    clip.write_gif(filename)
+    return clip
 
 
+path = 'logitechK120.png'
 
-def makekeystrokeImages(keystrokes:list[list], img, savefolder):
-    cv2.imwrite(f'{savefolder}beginEndImage.png', img)
+img = cv2.imread(path, cv2.IMREAD_COLOR)
 
-    for n, ks in enumerate(keystrokes):
-        cv2.imwrite(f'{savefolder}image{n}.png', highlightKeys(img, ks))
-
-makekeystrokeImages(exampleKeystroke, img, 'TestKeystrokeImgs/')
-
-
-from moviepy.editor import *
-import os
-images = os.listdir('TestKeystrokeImgs/')
-images = ['TestKeystrokeImgs/'+i for i in images if i.endswith('.png')]
-images.append(images[0])
-clip = ImageSequenceClip(images, fps=.75)
-clip.write_gif('TestKeystrokeImgs/example.gif')
-clip.close()
-
+makeKeystrokeGif(exampleKeystroke, img, 'testkeystroke')
