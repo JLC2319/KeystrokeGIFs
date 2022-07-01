@@ -61,7 +61,7 @@ keystrokes = [
     
      },
     {
-        'program': 'bluebeam',
+        'program': 'BlueBeam',
         'keystrokes': [
 
             {
@@ -70,7 +70,36 @@ keystrokes = [
                     ['ctrl'],
                     ['ctrl', 'c']
                 ]
-            }
+            },
+            {
+                'name':'paste',
+                'keystroke': [
+                    ['ctrl'],
+                    ['ctrl', 'v']
+                ]
+            },
+            {
+                'name':'underline',
+                'keystroke': [
+                    ['ctrl'],
+                    ['ctrl', 'u']
+                ]
+            },
+            {
+                'name':'italics',
+                'keystroke': [
+                    ['ctrl'],
+                    ['ctrl', 'i']
+                ]
+            },
+            {
+                'name':'bold',
+                'keystroke': [
+                    ['ctrl'],
+                    ['ctrl', 'b']
+                ]
+            },
+
         ]
     
      }

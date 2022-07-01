@@ -126,12 +126,8 @@ def returnkeyrect(keyStr, rects = keyRectangles):
 
 #[{'x':165,'y':220,'w':55,'h':55}, 'esc'],
 
-exampleKeystroke = [
-    ['alt'],
-    ['alt', 'tab']
-    ]
 
-def highlightKeys(img, keys, color = (255, 0, 0), lineThickness = 2):
+def highlightKeys(img, keys, color = (255, 0, 0), lineThickness = 3):
     retImg = img.copy()
     for rect in [returnkeyrect(key) for key in keys]:
         startPoint = (rect['x'],rect['y'])
@@ -162,5 +158,18 @@ def makeKeystrokeGif(keystroke, img, filename:str, fps=.75):
 path = 'logitechK120.png'
 
 img = cv2.imread(path, cv2.IMREAD_COLOR)
+exampleKeystroke = [
+    ['alt'],
+    ['alt', 'tab']
+    ]
 
-makeKeystrokeGif(exampleKeystroke, img, 'testkeystroke')
+
+from keystrokes import keystrokes
+
+for application in keystrokes:
+    for keystroke in application['keystrokes']:
+        print(application['program'],keystroke['name'], keystroke['keystroke'])
+        makeKeystrokeGif(keystroke['keystroke'], img, 'keystrokeGifs/'+application['program']+'-'+keystroke['name'])
+
+
+#makeKeystrokeGif(exampleKeystroke, img, 'testkeystroke')
