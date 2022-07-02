@@ -1,3 +1,10 @@
+#todo: bluebeam
+#todo: excel
+#Review: Chrome
+#todo: OST
+#todo: Word
+#todo: teams
+
 keystrokes = [
     {
         'program': 'Excel',

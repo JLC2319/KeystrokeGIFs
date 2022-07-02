@@ -124,9 +124,6 @@ def returnkeyrect(keyStr, rects = keyRectangles):
         print(f'-- {keyStr} -- Key not found. see reference: ', [r[1] for r in rects])
         return {'x':0,'y':0,'w':0,'h':0}
 
-#[{'x':165,'y':220,'w':55,'h':55}, 'esc'],
-
-
 def highlightKeys(img, keys, color = (255, 0, 0), lineThickness = 3):
     retImg = img.copy()
     for rect in [returnkeyrect(key) for key in keys]:
@@ -144,10 +141,10 @@ def makeKeyStrokeImgs(keyCombos:list[list[str]], img):
         keyStrokeImg = highlightKeys(img.copy(), keyStroke)
         imgs.append(keyStrokeImg)
     imgs.append(beforeAfter)
-    imgs = [img[180:620, 100:1500] for img in imgs]
+    imgs = [img[180:620, 120:1235] for img in imgs]
     return imgs
 
-def makeKeystrokeGif(keystroke, img, filename:str, fps=.75):
+def makeKeystrokeGif(keystroke, img, filename:str, fps=.5):
     clip = ImageSequenceClip(makeKeyStrokeImgs(keystroke,img), fps=.75)
     if not filename.endswith('.gif'):
         filename = filename+'.gif'
