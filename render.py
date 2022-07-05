@@ -3,6 +3,7 @@ from distutils.log import error
 import cv2
 import numpy
 from moviepy.editor import *
+from pip import main
 
 
 
@@ -141,7 +142,7 @@ def makeKeyStrokeImgs(keyCombos:list[list[str]], img):
         keyStrokeImg = highlightKeys(img.copy(), keyStroke)
         imgs.append(keyStrokeImg)
     imgs.append(beforeAfter)
-    imgs = [img[180:620, 120:1235] for img in imgs]
+    imgs = [img[180:620, 115:1235] for img in imgs]
     return imgs
 
 def makeKeystrokeGif(keystroke, img, filename:str, fps=.5):
@@ -150,7 +151,6 @@ def makeKeystrokeGif(keystroke, img, filename:str, fps=.5):
         filename = filename+'.gif'
     clip.write_gif(filename)
     return clip
-
 
 path = 'logitechK120.png'
 
