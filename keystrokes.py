@@ -120,6 +120,143 @@ keystrokes = [
                 'name':'Markup-Callout',
                 'keystroke':'q'
             },
+            {
+                'name':'Markup-Camera',
+                'keystroke':'ctrl+alt+i'
+            },
+            {
+                'name':'Markup-Spell Check',
+                'keystroke':'f7'
+            },
+            {
+                'name':'Markup-Cloud',
+                'keystroke':'c'
+            },
+            {
+                'name':'Markup-Cloud+',
+                'keystroke':'k'
+            },
+            {
+                'name':'Markup-Dimension',
+                'keystroke':'shift+l'
+            },
+            {
+                'name':'Markup-Edit Action',
+                'keystroke':'ctrl+shift+e'
+            },
+            {
+                'name':'Markup-Ellipse',
+                'keystroke':'e'
+            },
+            {
+                'name':'Markup-Eraser',
+                'keystroke':'shift+e'
+            },
+            {
+                'name':'Markup-Export Markups',
+                'keystroke':'ctrl+f2'
+            },
+            {
+                'name':'Markup-File Attachment',
+                'keystroke':'f'
+            },
+            {
+                'name':'Markup-Flag',
+                'keystroke':'shift+f'
+            },
+            {
+                'name':'Markup-Flip Horizontal',
+                'keystroke':'ctrl+alt+h'
+            },
+            {
+                'name':'Markup-Flip Vertical',
+                'keystroke':'ctrl+alt+v'
+            },
+            {
+                'name':'Markup-Group',
+                'keystroke':'ctrl+g'
+            },
+            {
+                'name':'Markup-Highlight',
+                'keystroke':'h'
+            },
+            {
+                'name':'Markup-Hyperlink',
+                'keystroke':'shift+h'
+            },
+            {
+                'name':'Markup-Image',
+                'keystroke':'i'
+            },
+            {
+                'name':'Markup-Image From Scanner',
+                'keystroke':'shift+i'
+            },
+            {
+                'name':'Markup-Import',
+                'keystroke':'ctrl+f3'
+            },
+            {
+                'name':'Markup-Line',
+                'keystroke':'l'
+            },
+            {
+                'name':'Markup-Lock',
+                'keystroke':'ctrl+shift+l'
+            },
+            {
+                'name':'Markup-Note',
+                'keystroke':'n'
+            },
+            {
+                'name':'Markup-Pen',
+                'keystroke':'p'
+            },
+            {
+                'name':'Markup-Polygon',
+                'keystroke':'shift+p'
+            },
+            {
+                'name':'Markup-Rectangle',
+                'keystroke':'r'
+            },
+            {
+                'name':'Markup-Review Text',
+                'keystroke':'shift+alt+r'
+            },
+            {
+                'name':'Markup-Send Backward',
+                'keystroke':'ctrl+['
+            },
+            {
+                'name':'Markup-Send to Back',
+                'keystroke':'ctrl+shift+['
+            },
+            {
+                'name':'Markup-Stamp',
+                'keystroke':'s'
+            },
+            {
+                'name':'Markup-Text Box',
+                'keystroke':'t'
+            },
+            {
+                'name':'Markup-Typewriter',
+                'keystroke':'w'
+            },
+            {
+                'name':'Markup-Ungroup',
+                'keystroke':'ctrl+shift+g'
+            },
+            # {
+            #     'name':'Markup-',
+            #     'keystroke':''
+            # },
+            # {
+            #     'name':'Markup-',
+            #     'keystroke':''
+            # },
+
 
 
 

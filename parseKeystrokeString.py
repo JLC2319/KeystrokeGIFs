@@ -21,8 +21,7 @@ def parseSequence(string:str):
 
         else:
             arr = [segment]
-            kestrokeArray.append(arr); kestrokeArray.append([''])
-
+            kestrokeArray.append(arr)
     return kestrokeArray
 
 if __name__ == "__main__":
