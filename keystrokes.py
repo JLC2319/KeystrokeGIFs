@@ -407,6 +407,153 @@ keystrokes = [
             },
 
 
+            {
+                'name':'Search-Start Search',
+                'keystroke':'ctrl+f'
+            },
+            {
+                'name':'Search-Next Result',
+                'keystroke':'f3'
+            },
+            {
+                'name':'Search-Previous Result',
+                'keystroke':'shift+f3'
+            },
+
+            {
+                'name':'File-Close',
+                'keystroke':'ctrl+f4'
+            },
+            {
+                'name':'File-Create new Pdf',
+                'keystroke':'ctrl+n'
+            },
+            {
+                'name':'File-Open',
+                'keystroke':'ctrl+o'
+            },
+            {
+                'name':'File-Print',
+                'keystroke':'ctrl+p'
+            },
+            {
+                'name':'File-Publish as Compressed',
+                'keystroke':'ctrl+shift+p'
+            },
+            {
+                'name':'File-Save',
+                'keystroke':'ctrl+s'
+            },
+            {
+                'name':'File-Save All',
+                'keystroke':'shift+f2'
+            },
+            {
+                'name':'File-Save As',
+                'keystroke':'ctrl+shift+5'
+            },
+            {
+                'name':'Editing-Copy',
+                'keystroke':'ctrl+c'
+            },
+            {
+                'name':'Editing-Copy Page to Snapshot',
+                'keystroke':'ctrl+alt+c'
+            },
+            {
+                'name':'Editing-Cut',
+                'keystroke':'ctrl+x'
+            },
+            {
+                'name':'Editing-Delete',
+                'keystroke':'delete'
+            },
+            {
+                'name':'Editing-Format Painter',
+                'keystroke':'ctrl+shift+c'
+            },
+            {
+                'name':'Editing-Paste',
+                'keystroke':'ctrl+v'
+            },
+            {
+                'name':'Editing-Paste in Place',
+                'keystroke':'ctrl+shift+v'
+            },
+            {
+                'name':'Editing-Redo',
+                'keystroke':'ctrl+y'
+            },
+            {
+                'name':'Editing-Select All',
+                'keystroke':'ctrl+a'
+            },
+            {
+                'name':'Editing-Select All Text',
+                'keystroke':'ctrl+shift+a'
+            },
+            {
+                'name':'Editing-Snapshot',
+                'keystroke':'g'
+            },
+            {
+                'name':'Editing-undo',
+                'keystroke':'ctrl+z'
+            },
+            {
+                'name':'Selection-Lasso',
+                'keystroke':'shift+o'
+            },
+            {
+                'name':'Selection-Pan',
+                'keystroke':'shift+v'
+            },
+
+            {
+                'name':'Selection-Select',
+                'keystroke':'v'
+            },
+
+            {
+                'name':'Selection-Select Text',
+                'keystroke':'shift+t'
+            },
+
+            {
+                'name':'Selection-Toggle Zoom Tool',
+                'keystroke':'shift+z'
+            },
+
+            {
+                'name':'Selection-Zoom In',
+                'keystroke':'='
+            },
+
+            {
+                'name':'Selection-Zoom Out',
+                'keystroke':'-'
+            },
+
+            {
+                'name':'Selection-Zoom Tool',
+                'keystroke':'z'
+            },
+            { #todo 27
+                'name':'Document-',
+                'keystroke':''
+            },
+            { #todo 4
+                'name':'Navigation-',
+                'keystroke':''
+            },
+            { #todo 28
+                'name':'Window-',
+                'keystroke':''
+            },
+
+
+
+
 
 
             # {
