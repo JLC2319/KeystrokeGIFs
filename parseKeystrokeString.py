@@ -1,14 +1,8 @@
-from numpy import array
-
-
-exampleString = 'alt;ctrl+shift+s'
-
-
-
 
 
 
 def parseSequence(string:str):
+
     def parseCombo(string: str):
         comboArray = []
         splitup = string.split('+')
@@ -31,4 +25,5 @@ def parseSequence(string:str):
 
     return kestrokeArray
 
-print(parseSequence('alt;h;m;m'))
+if __name__ == "__main__":
+    print(parseSequence('alt;h;m;m'))

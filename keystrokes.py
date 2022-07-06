@@ -12,52 +12,31 @@ keystrokes = [
 
             {
                 'name':'copy',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'c']
-                ]
+                'keystroke': 'ctrl+c'
             },
             {
                 'name':'paste',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'v']
-                ]
+                'keystroke': 'ctrl+v'
             },
             {
                 'name':'copy down',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'd']
-                ]
+                'keystroke': 'ctrl+d'
             },
             {
                 'name':'copy right',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'r']
-                ]
+                'keystroke': 'ctrl+r'
             },
             {
                 'name':'underline',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'u']
-                ]
+                'keystroke': 'ctrl+u'
             },
             {
                 'name':'italics',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'i']
-                ]
+                'keystroke': 'ctrl+i'
             },
             {
                 'name':'bold',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'b']
-                ]
+                'keystroke': 'ctrl+b'
             },
             
             
@@ -73,130 +52,73 @@ keystrokes = [
 
             {
                 'name':'copy',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'c']
-                ]
+                'keystroke': 'ctrl+c'
             },
             {
                 'name':'paste',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'v']
-                ]
+                'keystroke': 'ctrl+v'
             },
             {
-                'name':'Text-underline',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'u']
-                ]
+                'name':'Text Markup-underline',
+                'keystroke': 'ctrl+u'
             },
             {
-                'name':'Text-italics',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'i']
-                ]
+                'name':'Text Markup-italics',
+                'keystroke': 'ctrl+i'
             },
             {
-                'name':'Text-bold',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'b']
-                ]
+                'name':'Text Markup-bold',
+                'keystroke': 'ctrl+b'
             },
 
             
             {
-                'name':'Markup-Align Botton',
-                'keystroke':[
-                    ['ctrl'],
-                    ['ctrl', 'alt'],
-                    ['b']
-                ]
+                'name':'Text Markup-Align Bottom',
+                'keystroke':'ctrl+alt;b'
             },
             {
-                'name':'Markup-Align Center',
-                'keystroke':[
-                    ['ctrl'],
-                    ['ctrl', 'alt'],
-                    ['e']
-                ]
+                'name':'Text Markup-Align Center',
+                'keystroke':'ctrl+alt;b'
             },
             {
-                'name':'Markup-Align Left',
-                'keystroke':[
-                    ['ctrl'],
-                    ['ctrl', 'alt'],
-                    ['l']
-                ]
+                'name':'Text Markup-Align Left',
+                'keystroke':'ctrl+alt;l'
             },
             {
-                'name':'Markup-Align Middle',
-                'keystroke':[
-                    ['ctrl'],
-                    ['ctrl', 'alt'],
-                    ['m']
-                ]
+                'name':'Text Markup-Align Middle',
+                'keystroke':'ctrl+alt;m'
             },
             {
-                'name':'Markup-Align Right',
-                'keystroke':[
-                    ['ctrl'],
-                    ['ctrl', 'alt'],
-                    ['r']
-                ]
+                'name':'Text Markup-Align Right',
+                'keystroke':'ctrl+alt;r'
             },
             {
-                'name':'Markup-Align Top',
-                'keystroke':[
-                    ['ctrl'],
-                    ['ctrl', 'alt'],
-                    ['t']
-                ]
+                'name':'Text Markup-Align Top',
+                'keystroke':'ctrl+alt;t'
             },
             {
                 'name':'Markup-Arc',
-                'keystroke':[
-                    ['shift'],
-                    ['shift', 'c']
-                ]
+                'keystroke':'shift+c'
             },
             {
                 'name':'Markup-Arrow',
-                'keystroke':[
-                    ['a'],
-                ]
+                'keystroke':'a'
             },
             {
                 'name':'Markup-Autosize Text Box',
-                'keystroke':[
-                    ['alt'],
-                    ['alt', 'z']
-                ]
+                'keystroke':'alt+z'
             },
             {
                 'name':'Markup-Bring Forward',
-                'keystroke':[
-                    ['ctrl'],
-                    ['ctrl', 'j']
-                ]
+                'keystroke':'ctrl+j'
             },
             {
                 'name':'Markup-Bring to Front',
-                'keystroke':[
-                    ['ctrl'],
-                    ['ctrl', 'shift'],
-                    ['ctrl', 'shift', 'j'],
-                    
-                ]
+                'keystroke':'ctrl+shift+j'
             },
             {
                 'name':'Markup-Callout',
-                'keystroke':[
-                    ['q'],
-                ]
+                'keystroke':'q'
             },
 
 
@@ -217,153 +139,85 @@ keystrokes = [
 
             {
                 'name':'copy',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'c']
-                ]
+                'keystroke': 'ctrl+c'
             },
             {
                 'name':'paste',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'v']
-                ]
+                'keystroke': 'ctrl+v'
             },
             {
                 'name':'New Window',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'n']
-                ]
+                'keystroke': 'ctrl+n'
             },
             {
                 'name':'New Incognito Window',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'shift'],
-                    ['ctrl', 'shift', 'n']
-                ]
+                'keystroke': 'ctrl+shift+n'
             },
             {
                 'name':'New Tab',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 't']
-                ]
+                'keystroke': 'ctrl+t'
             },
             {
                 'name':'Reopen Closed Tabs',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'shift'],
-                    ['ctrl','shift', 't']
-                ]
+                'keystroke': 'ctrl+shift+t'
             },
             
             {
                 'name':'Jump to Next Tab (tab)',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'tab']
-                ]
+                'keystroke': 'ctrl+tab'
             },
 
             {
                 'name':'Jump to Next Tab (pgdown)',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl', 'page down']
-                ]
+                'keystroke': 'ctrl+page down'
             },
             {
                 'name':'Jump to previously open tab (tab)',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl','shift'],
-                    ['ctrl','shift', 'tab']
-                ]
+                'keystroke': 'ctrl+shift+tab'
             },
             {
                 'name':'Jump to previously open tab (pgup)',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl','page up']
-                ]
+                'keystroke': 'ctrl+page up'
             },
             {
                 'name':'Open Home Page',
-                'keystroke': [
-                    ['alt'],
-                    ['alt','home'],
-                ]
+                'keystroke': 'alt+home'
             },
             {
                 'name':'View previous page',
-                'keystroke': [
-                    ['alt'],
-                    ['alt','left'],
-                ]
+                'keystroke': 'alt+left'
             },
             {
                 'name':'View Next page',
-                'keystroke': [
-                    ['alt'],
-                    ['alt','right'],
-                ]
+                'keystroke': 'alt+right'
             },
             {
                 'name':'Close Current Tab',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl','w'],
-                ]
+                'keystroke': 'ctrl+w'
             },
             {
                 'name':'Close current window',
-                'keystroke': [
-                    ['alt'],
-                    ['alt','f4'],
-                ]
+                'keystroke': 'alt+f4'
             },
             {
                 'name':'Minimize Current Window',
-                'keystroke': [
-                    ['alt'],
-                    ['alt','space'],
-                    ['n'],
-                ]
+                'keystroke': 'alt+space;n'
             },
             {
                 'name':'Maximize Current window',
-                'keystroke': [
-                    ['alt'],
-                    ['alt','space'],
-                    ['x']
-                ]
+                'keystroke': 'alt+space;x'
             },
             {
                 'name':'Quit Chrome',
-                'keystroke': [
-                    ['alt'],
-                    ['alt','f'],
-                    ['x']
-                ]
+                'keystroke': 'alt+x;f'
             },
             {
                 'name':'Move Tab right',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl','shift'],
-                    ['ctrl','shift', 'page up'],
-                ]
+                'keystroke': 'ctrl+shift+page up'
             },
             {
                 'name':'Move Tab left',
-                'keystroke': [
-                    ['ctrl'],
-                    ['ctrl','shift'],
-                    ['ctrl','shift', 'page down'],
-                ]
+                'keystroke': 'ctrl+shift+page up'
             },
             
             

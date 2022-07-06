@@ -1,9 +1,7 @@
-from cgitb import text
-from distutils.log import error
 import cv2
-import numpy
 from moviepy.editor import *
 from pip import main
+from parseKeystrokeString import parseSequence 
 
 
 
@@ -125,7 +123,7 @@ def returnkeyrect(keyStr, rects = keyRectangles):
         print(f'-- {keyStr} -- Key not found. see reference: ', [r[1] for r in rects])
         return {'x':0,'y':0,'w':0,'h':0}
 
-def highlightKeys(img, keys, color = (0, 0, 255), lineThickness = 3):
+def highlightKeys(img, keys, color = (0, 255, 0), lineThickness = 3):
     retImg = img.copy()
     for rect in [returnkeyrect(key) for key in keys]:
         startPoint = (rect['x'],rect['y'])
@@ -134,7 +132,8 @@ def highlightKeys(img, keys, color = (0, 0, 255), lineThickness = 3):
     return retImg
     
 
-def makeKeyStrokeImgs(keyCombos:list[list[str]], img, annotation = ''):
+def makeKeyStrokeImgs(keyStroke, img, annotation = ''):
+    keyCombos = parseSequence(keyStroke)
     blank = img.copy()
     imgs = [blank]
 
@@ -145,34 +144,32 @@ def makeKeyStrokeImgs(keyCombos:list[list[str]], img, annotation = ''):
     imgs = [img[180:620, 115:1235] for img in imgs]
     
 
-    imgs = [cv2.putText(img, annotation, (25,25), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2, cv2.LINE_AA) for img in imgs] #todo: find better font
+    imgs = [cv2.putText(img, annotation, (50,30), cv2.FONT_HERSHEY_DUPLEX, 1.25, (0,255,0), 1, cv2.LINE_AA) for img in imgs] #todo: find better font
 
 
 
     return imgs
 
-def makeKeystrokeGif(keystroke, img, filename:str, fps=.5):
-    clip = ImageSequenceClip(makeKeyStrokeImgs(keystroke,img, filename.split('/')[-1]), fps=.75)
+def makeKeystrokeGif(keystroke, imgs, filename:str, fps=.3):
+    clip = ImageSequenceClip(makeKeyStrokeImgs(keystroke,imgs, filename.split('/')[-1]), fps=.75)
     if not filename.endswith('.gif'):
         filename = filename+'.gif'
     clip.write_gif(filename)
     return clip
 
-path = 'logitechK120.png'
-
-img = cv2.imread(path, cv2.IMREAD_COLOR)
-exampleKeystroke = [
-    ['alt'],
-    ['alt', 'tab']
-    ]
 
 
-from keystrokes import keystrokes
+if __name__ =='__main__':
 
-for application in keystrokes:
-    for keystroke in application['keystrokes']:
-        print(application['program'],keystroke['name'], keystroke['keystroke'])
-        makeKeystrokeGif(keystroke['keystroke'], img, 'keystrokeGifs/'+application['program']+'-'+keystroke['name'])
+    path = 'logitechK120.png'
+
+    img = cv2.imread(path, cv2.IMREAD_COLOR)
+
+    from keystrokes import keystrokes
+
+    for application in keystrokes:
+        for keystroke in application['keystrokes']:
+            print(application['program'],keystroke['name'], keystroke['keystroke'])
+            makeKeystrokeGif(keystroke['keystroke'], img, 'keystrokeGifs/'+application['program']+'-'+keystroke['name'])
 
 
-#makeKeystrokeGif(exampleKeystroke, img, 'testkeystroke')
