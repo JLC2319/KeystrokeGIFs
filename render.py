@@ -125,7 +125,7 @@ def returnkeyrect(keyStr, rects = keyRectangles):
         print(f'-- {keyStr} -- Key not found. see reference: ', [r[1] for r in rects])
         return {'x':0,'y':0,'w':0,'h':0}
 
-def highlightKeys(img, keys, color = (255, 0, 0), lineThickness = 3):
+def highlightKeys(img, keys, color = (0, 0, 255), lineThickness = 3):
     retImg = img.copy()
     for rect in [returnkeyrect(key) for key in keys]:
         startPoint = (rect['x'],rect['y'])
@@ -135,17 +135,17 @@ def highlightKeys(img, keys, color = (255, 0, 0), lineThickness = 3):
     
 
 def makeKeyStrokeImgs(keyCombos:list[list[str]], img, annotation = ''):
-    beforeAfter = img.copy()
-    imgs = [beforeAfter]
+    blank = img.copy()
+    imgs = [blank]
 
     for keyStroke in keyCombos:
         keyStrokeImg = highlightKeys(img.copy(), keyStroke)
         imgs.append(keyStrokeImg)
-    imgs.append(beforeAfter)
+    imgs.append(blank)
     imgs = [img[180:620, 115:1235] for img in imgs]
     
 
-    imgs = [cv2.putText(img, annotation, (25,25), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 2, cv2.LINE_AA) for img in imgs] #todo: find better font
+    imgs = [cv2.putText(img, annotation, (25,25), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2, cv2.LINE_AA) for img in imgs] #todo: find better font
 
 
 
