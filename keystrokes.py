@@ -248,10 +248,51 @@ keystrokes = [
                 'name':'Markup-Ungroup',
                 'keystroke':'ctrl+shift+g'
             },
-            # {
-            #     'name':'Markup-',
-            #     'keystroke':''
-            # },
+            {
+                'name':'Measure-Angle',
+                'keystroke':'shift+alt+g'
+            },
+            {
+                'name':'Measure-Area',
+                'keystroke':'shift+alt+a'
+            },
+            {
+                'name':'Measure-Count',
+                'keystroke':'shift+alt+c'
+            },
+            {
+                'name':'Measure-Diameter',
+                'keystroke':'shift+alt+d'
+            },
+            {
+                'name':'Measure-Dynamic Fill',
+                'keystroke':'j'
+            },
+            {
+                'name':'Measure-Length',
+                'keystroke':'shift+alt+l'
+            },
+            {
+                'name':'Measure-Measure Tool',
+                'keystroke':'m'
+            },
+            {
+                'name':'Measure-Perimeter',
+                'keystroke':'shift+alt+p'
+            },
+            {
+                'name':'Measure-PolyLength',
+                'keystroke':'shift+alt+q'
+            },
+            {
+                'name':'Measure-Radius',
+                'keystroke':'shift+alt+u'
+            },
+            {
+                'name':'Measure-Volume',
+                'keystroke':'shift+alt+v'
+            },
+
             # {
             #     'name':'Markup-',
             #     'keystroke':''
