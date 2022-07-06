@@ -124,7 +124,7 @@ def returnkeyrect(keyStr, rects = keyRectangles):
         return {'x':0,'y':0,'w':0,'h':0}
 
 def highlightKeys(img, keys, color = (0,0,255), lineThickness = 3):
-    retImg = cv2.bitwise_not(img.copy())
+    retImg = img.copy()
     for rect in [returnkeyrect(key) for key in keys]:
         startPoint = (rect['x'],rect['y'])
         endPoint = (rect['x']+rect['w'],rect['y']+rect['h'])
@@ -134,7 +134,7 @@ def highlightKeys(img, keys, color = (0,0,255), lineThickness = 3):
 
 def makeKeyStrokeImgs(keyStroke, img, annotation = ''):
     keyCombos = parseSequence(keyStroke)
-    blank = cv2.bitwise_not(img.copy())
+    blank = img.copy()
     imgs = [blank]
 
     for keyStroke in keyCombos:
