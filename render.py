@@ -123,8 +123,8 @@ def returnkeyrect(keyStr, rects = keyRectangles):
         print(f'-- {keyStr} -- Key not found. see reference: ', [r[1] for r in rects])
         return {'x':0,'y':0,'w':0,'h':0}
 
-def highlightKeys(img, keys, color = (0, 255, 0), lineThickness = 3):
-    retImg = img.copy()
+def highlightKeys(img, keys, color = (0,0,255), lineThickness = 3):
+    retImg = cv2.bitwise_not(img.copy())
     for rect in [returnkeyrect(key) for key in keys]:
         startPoint = (rect['x'],rect['y'])
         endPoint = (rect['x']+rect['w'],rect['y']+rect['h'])
@@ -134,7 +134,7 @@ def highlightKeys(img, keys, color = (0, 255, 0), lineThickness = 3):
 
 def makeKeyStrokeImgs(keyStroke, img, annotation = ''):
     keyCombos = parseSequence(keyStroke)
-    blank = img.copy()
+    blank = cv2.bitwise_not(img.copy())
     imgs = [blank]
 
     for keyStroke in keyCombos:
@@ -144,7 +144,7 @@ def makeKeyStrokeImgs(keyStroke, img, annotation = ''):
     imgs = [img[180:620, 115:1235] for img in imgs]
     
 
-    imgs = [cv2.putText(img, annotation, (50,30), cv2.FONT_HERSHEY_DUPLEX, 1.25, (0,255,0), 1, cv2.LINE_AA) for img in imgs] #todo: find better font
+    imgs = [cv2.putText(img, annotation, (50,30), cv2.FONT_HERSHEY_DUPLEX, 1.25, (0,0,255), 1, cv2.LINE_AA) for img in imgs] #todo: find better font
 
 
 
