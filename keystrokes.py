@@ -538,18 +538,18 @@ keystrokes = [
                 'name':'Selection-Zoom Tool',
                 'keystroke':'z'
             },
-            { #todo 27
-                'name':'Document-',
-                'keystroke':''
-            },
-            { #todo 4
-                'name':'Navigation-',
-                'keystroke':''
-            },
-            { #todo 28
-                'name':'Window-',
-                'keystroke':''
-            },
+            # { #todo 27
+            #     'name':'Document-',
+            #     'keystroke':''
+            # },
+            # { #todo 4
+            #     'name':'Navigation-',
+            #     'keystroke':''
+            # },
+            # { #todo 28
+            #     'name':'Window-',
+            #     'keystroke':''
+            # },
 
 
 
