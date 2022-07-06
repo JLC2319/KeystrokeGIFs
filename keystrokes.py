@@ -293,10 +293,118 @@ keystrokes = [
                 'keystroke':'shift+alt+v'
             },
 
-            # {
-            #     'name':'Markup-',
-            #     'keystroke':''
-            # },
+            {
+                'name':'View-Actual Size',
+                'keystroke':'ctrl+8'
+            },
+            {
+                'name':'View-Balance',
+                'keystroke':'shift+f12'
+            },
+            {
+                'name':'View-Continuous Mode',
+                'keystroke':'ctrl+5'
+            },
+            {
+                'name':'View-Continuous Side by Side Mode',
+                'keystroke':'ctrl+7'
+            },
+            {
+                'name':'View-Dimmer',
+                'keystroke':'ctrl+f5'
+            },
+            {
+                'name':'View-Fit Page',
+                'keystroke':'ctrl+9'
+            },
+            {
+                'name':'View-Next Page',
+                'keystroke':'ctrl+right'
+            },
+            {
+                'name':'View-Next View',
+                'keystroke':'alt+right'
+            },
+            {
+                'name':'View-Previous View',
+                'keystroke':'alt+left'
+            },
+            {
+                'name':'View-Refresh',
+                'keystroke':'f5'
+            },
+            {
+                'name':'View-Remote Files',
+                'keystroke':'alt+k'
+            },
+            {
+                'name':'View-Rotate View Clockwise',
+                'keystroke':'ctrl+shift+='
+            },
+            {
+                'name':'View-Rotate View Counterclockwise',
+                'keystroke':'ctrl+shift+-'
+            },
+            {
+                'name':'View-Rulers',
+                'keystroke':'ctrl+r'
+            },
+            {
+                'name':'View-Show Grid',
+                'keystroke':'ctrl+f9'
+            },
+            {
+                'name':'View-Side by Side',
+                'keystroke':'ctrl+6'
+            },
+            {
+                'name':'View-Single Page Mode',
+                'keystroke':'ctrl+4'
+            },
+            {
+                'name':'View-Snap to Content',
+                'keystroke':'ctrl+shift+f8'
+            },
+            {
+                'name':'View-Snap to Grid',
+                'keystroke':'ctrl+shift+f9'
+            },
+            {
+                'name':'View-Snap to Markup',
+                'keystroke':'ctrl+shift+f7'
+            },
+            {
+                'name':'View-Split Horizontal',
+                'keystroke':'ctrl+h'
+            },
+            {
+                'name':'View-Split Vertical',
+                'keystroke':'ctrl+2'
+            },
+            {
+                'name':'View-Switch',
+                'keystroke':'ctrl+1'
+            },
+            {
+                'name':'View-Toggle Split',
+                'keystroke':'ctrl+i'
+            },
+            {
+                'name':'View-Unsplit',
+                'keystroke':'ctrl+shift+2'
+            },
+            {
+                'name':'View-Web Tab',
+                'keystroke':'ctrl+t'
+            },
+            {
+                'name':'View-Fit Width',
+                'keystroke':'ctrl+0'
+            },
+            {
+                'name':'View-Previous Page',
+                'keystroke':'ctrl+left'
+            },
 
 
 
