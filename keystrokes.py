@@ -86,31 +86,132 @@ keystrokes = [
                 ]
             },
             {
-                'name':'underline',
+                'name':'Text-underline',
                 'keystroke': [
                     ['ctrl'],
                     ['ctrl', 'u']
                 ]
             },
             {
-                'name':'italics',
+                'name':'Text-italics',
                 'keystroke': [
                     ['ctrl'],
                     ['ctrl', 'i']
                 ]
             },
             {
-                'name':'bold',
+                'name':'Text-bold',
                 'keystroke': [
                     ['ctrl'],
                     ['ctrl', 'b']
                 ]
             },
 
+            
+            {
+                'name':'Markup-Align Botton',
+                'keystroke':[
+                    ['ctrl'],
+                    ['ctrl', 'alt'],
+                    ['b']
+                ]
+            },
+            {
+                'name':'Markup-Align Center',
+                'keystroke':[
+                    ['ctrl'],
+                    ['ctrl', 'alt'],
+                    ['e']
+                ]
+            },
+            {
+                'name':'Markup-Align Left',
+                'keystroke':[
+                    ['ctrl'],
+                    ['ctrl', 'alt'],
+                    ['l']
+                ]
+            },
+            {
+                'name':'Markup-Align Middle',
+                'keystroke':[
+                    ['ctrl'],
+                    ['ctrl', 'alt'],
+                    ['m']
+                ]
+            },
+            {
+                'name':'Markup-Align Right',
+                'keystroke':[
+                    ['ctrl'],
+                    ['ctrl', 'alt'],
+                    ['r']
+                ]
+            },
+            {
+                'name':'Markup-Align Top',
+                'keystroke':[
+                    ['ctrl'],
+                    ['ctrl', 'alt'],
+                    ['t']
+                ]
+            },
+            {
+                'name':'Markup-Arc',
+                'keystroke':[
+                    ['shift'],
+                    ['shift', 'c']
+                ]
+            },
+            {
+                'name':'Markup-Arrow',
+                'keystroke':[
+                    ['a'],
+                ]
+            },
+            {
+                'name':'Markup-Autosize Text Box',
+                'keystroke':[
+                    ['alt'],
+                    ['alt', 'z']
+                ]
+            },
+            {
+                'name':'Markup-Bring Forward',
+                'keystroke':[
+                    ['ctrl'],
+                    ['ctrl', 'j']
+                ]
+            },
+            {
+                'name':'Markup-Bring to Front',
+                'keystroke':[
+                    ['ctrl'],
+                    ['ctrl', 'shift'],
+                    ['ctrl', 'shift', 'j'],
+                    
+                ]
+            },
+            {
+                'name':'Markup-Callout',
+                'keystroke':[
+                    ['q'],
+                ]
+            },
+
+
+
+            # {
+            #     'name':'',
+            #     'keystroke':[
+            #         ['ctrl'],
+            #     ]
+            # },
+
         ]
     
      },
-    {
+    { #Chrome
         'program': 'Chrome',
         'keystrokes': [
 
