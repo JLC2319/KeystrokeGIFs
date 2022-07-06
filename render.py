@@ -144,7 +144,6 @@ def makeKeyStrokeImgs(keyCombos:list[list[str]], img, annotation = ''):
     imgs.append(beforeAfter)
     imgs = [img[180:620, 115:1235] for img in imgs]
     
-    #todo: text annotations
 
     imgs = [cv2.putText(img, annotation, (25,25), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (255,0,0), 1, cv2.LINE_AA) for img in imgs]
 
