@@ -161,7 +161,7 @@ def makeKeystrokeGif(keystroke, imgs, filename:str, fps=.3):
 
 if __name__ =='__main__':
 
-    path = 'logitechK120.png'
+    path = 'logitechK120-Inverted.png'
 
     img = cv2.imread(path, cv2.IMREAD_COLOR)
 
@@ -169,7 +169,7 @@ if __name__ =='__main__':
 
     for application in keystrokes:
         for keystroke in application['keystrokes']:
-            print(application['program'],keystroke['name'], keystroke['keystroke'])
+            print(application['program'],keystroke['name'], keystroke['keystroke'], '\n')
             makeKeystrokeGif(keystroke['keystroke'], img, 'keystrokeGifs/'+application['program']+'-'+keystroke['name'])
 
 
