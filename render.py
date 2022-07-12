@@ -144,18 +144,19 @@ def makeKeyStrokeImgs(keyStroke, img, annotation = ''):
     imgs = [img[180:620, 115:1235] for img in imgs]
     
 
-    imgs = [cv2.putText(img, annotation, (50,30), cv2.FONT_HERSHEY_DUPLEX, 1.25, (0,0,255), 1, cv2.LINE_AA) for img in imgs] #todo: find better font
+    imgs = [cv2.putText(img, annotation, (50,30), cv2.FONT_HERSHEY_DUPLEX, .8, (0,0,255), 1, cv2.LINE_AA) for img in imgs] #todo: find better font
 
 
 
     return imgs
 
 def makeKeystrokeGif(keystroke, imgs, filename:str, fps=.2):
-    clip = ImageSequenceClip(makeKeyStrokeImgs(keystroke,imgs, filename.split('/')[-1]+'-'+keystroke), fps=.75)
+    clip = ImageSequenceClip(makeKeyStrokeImgs(keystroke,imgs, filename.split('/')[-1]+'-'+keystroke.upper()), fps=.75)
     if not filename.endswith('.gif'):
         filename = filename+'.gif'
     clip.write_gif(filename)
     return clip
+
 
 
 
