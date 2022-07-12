@@ -73,27 +73,27 @@ keystrokes = [
 
             
             {
-                'name':'Text Markup-Align Bottom',
+                'name':'Markup-Align Text Bottom',
                 'keystroke':'ctrl+alt;b'
             },
             {
-                'name':'Text Markup-Align Center',
+                'name':'Markup-Align Text Center',
                 'keystroke':'ctrl+alt;b'
             },
             {
-                'name':'Text Markup-Align Left',
+                'name':'Markup-Align Text Left',
                 'keystroke':'ctrl+alt;l'
             },
             {
-                'name':'Text Markup-Align Middle',
+                'name':'Markup-Align Text Middle',
                 'keystroke':'ctrl+alt;m'
             },
             {
-                'name':'Text Markup-Align Right',
+                'name':'Markup-Align Text Right',
                 'keystroke':'ctrl+alt;r'
             },
             {
-                'name':'Text Markup-Align Top',
+                'name':'Markup-Align Text Top',
                 'keystroke':'ctrl+alt;t'
             },
             {

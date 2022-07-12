@@ -151,7 +151,7 @@ def makeKeyStrokeImgs(keyStroke, img, annotation = ''):
     return imgs
 
 def makeKeystrokeGif(keystroke, imgs, filename:str, fps=.2):
-    clip = ImageSequenceClip(makeKeyStrokeImgs(keystroke,imgs, filename.split('/')[-1]), fps=.75)
+    clip = ImageSequenceClip(makeKeyStrokeImgs(keystroke,imgs, filename.split('/')[-1]+'-'+keystroke), fps=.75)
     if not filename.endswith('.gif'):
         filename = filename+'.gif'
     clip.write_gif(filename)
